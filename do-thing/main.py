@@ -8,8 +8,6 @@ hello.py
 complete.py
   Spoiler: complete.py has a completed implementation. For your IDEAL learning experience the completed project should NOT be viewed until after the workshop is done.
 '''
-import gooeypie as gp
-
 '''
 def give_result(event):
     result_lbl.text = "You got it, boss!"
@@ -41,6 +39,7 @@ app.run()
 '''
 
 # create application window
+import gooeypie as gp
 app = gp.GooeyPieApp("Do the things")
 app.width = 700
 app.set_grid(7, 7)
