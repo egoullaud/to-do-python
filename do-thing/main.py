@@ -16,5 +16,18 @@ app = gp.GooeyPieApp('Do the Thing')
 # width of window
 app.width = 700
 
+# set up grid
+app.set_grid(5, 3)
+
+# attach hello button
+
+hello_btn = gp.Button(app, "What to do?", None)
+hello_lbl = gp.Label(app, 'Label')
+
+# add them to the app
+app.add(hello_btn, 4, 2, align='center')
+app.add(hello_lbl, 4, 1, align='right')
+
+
 # always last
 app.run()
