@@ -21,11 +21,11 @@ app.set_grid(3, 3)
 
 # Define label and button
 
-hello_btn = gp.Button(app, "Put it on the board", None)
+add_btn = gp.Button(app, "Put it on the board", None)
 prompt_lbl = gp.Label(app, 'What needs doing?')
 
 # display on app
-app.add(hello_btn, 2, 2, align='left')
+app.add(add_btn, 2, 2, align='left')
 app.add(prompt_lbl, 2, 1, align='right')
 
 
