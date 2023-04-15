@@ -10,6 +10,11 @@ complete.py
 '''
 import gooeypie as gp
 
+
+def say_hello(event):
+    result_lbl.text = "You got it, boss!"
+
+
 # name the app on top of window
 app = gp.GooeyPieApp('Do the Thing')
 
@@ -23,10 +28,12 @@ app.set_grid(3, 3)
 
 add_btn = gp.Button(app, "Put it on the board", None)
 prompt_lbl = gp.Label(app, 'What needs doing?')
+result_lbl = gp.Label(app, '')
 
 # display on app
 app.add(add_btn, 2, 2, align='left')
 app.add(prompt_lbl, 2, 1, align='right')
+app.add(result_lbl, 3, 2, align='center')
 
 
 # always last
