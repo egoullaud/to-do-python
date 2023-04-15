@@ -14,7 +14,7 @@ import gooeypie as gp
 app = gp.GooeyPieApp('Do the Thing')
 
 # width of window
-app.width = 250
+app.width = 700
 
 # always last
 app.run()
