@@ -8,3 +8,7 @@ hello.py
 complete.py
   Spoiler: complete.py has a completed implementation. For your IDEAL learning experience the completed project should NOT be viewed until after the workshop is done.
 '''
+import gooeypie as gp
+
+
+app = gp.GooeyPieApp('Do the Thing')
