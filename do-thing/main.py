@@ -10,7 +10,7 @@ complete.py
 '''
 import gooeypie as gp
 
-
+'''
 def give_result(event):
     result_lbl.text = "You got it, boss!"
 
@@ -35,6 +35,17 @@ app.add(add_btn, 2, 2, align='left')
 app.add(prompt_lbl, 2, 1, align='right')
 app.add(result_lbl, 3, 2, align='left')
 
-
 # always last
 app.run()
+
+'''
+
+# create application window
+
+# create functions
+
+# create widgets
+
+# place widgets on grid
+
+# run app
