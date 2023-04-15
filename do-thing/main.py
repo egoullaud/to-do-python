@@ -43,15 +43,39 @@ app.run()
 # create application window
 app = gp.GooeyPieApp("Do it")
 app.width = 500
-
+app.set_grid(5, 3)
 
 # create functions
 
 
 # create widgets
+new_task_lbl = gp.Label(app, "What needs doing?")
+new_task_input = gp.Input(app)
+new_task_btn = gp.Button(app, "Put it on the board", None)
 
+list_lbl = gp.Label(app, "List")
+list_box = gp.Listbox(app)
+delete_btn = gp.Button(app, "Not doing it", None)
+all_done_btn = gp.Button(app, "Did all the things", None)
+
+
+finished_label = gp.Label(app, "Kill List")
+finished_box = gp.Listbox(app)
+clear_btn = gp.Button(app, "Clear Killed", None)
 
 # place widgets on grid
+app.add(new_task_lbl, 1, 1, align="right")
+app.add(new_task_input, 1, 2, align="left")
+app.add(new_task_btn, 1, 3, align="center")
+
+app.add(list_lbl, 2, 1, align="right")
+app.add(list_box, 2, 2, align='left')
+app.add(delete_btn, 3, 2, align='center')
+app.add(all_done_btn, 3, 3, align='center')
+
+app.add(finished_label, 4, 1, align='right')
+app.add(finished_box, 4, 2, align='left')
+app.add(clear_btn, 5, 3, align='center')
 
 
 # run app
