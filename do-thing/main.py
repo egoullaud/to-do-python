@@ -52,7 +52,6 @@ def add_task(event):
     if event.key['name'] == 'Return':
         list_box.add_item(new_task_input.text)
         new_task_input.clear()
-        result_add_lbl.text = "As you wish, my liege"
 
 
 def add_task_btn(event):
@@ -70,6 +69,11 @@ def one_done(event):
         finished_box.add_item(list_box.remove_selected())
 
 
+def done_all(event):
+    finished_box.items += list_box.items
+    list_box.items = []
+
+
 def clear_all(event):
     finished_box.items = []
     clear_result_lbl.text = "My god, man. You've killed them all!"
@@ -84,7 +88,7 @@ result_add_lbl = gp.Label(app, "")
 list_lbl = gp.Label(app, "Live List")
 list_box = gp.Listbox(app)
 delete_btn = gp.Button(app, "Not doing it", delete_task)
-all_done_btn = gp.Button(app, "Did all the things", None)
+all_done_btn = gp.Button(app, "Did all the things", done_all)
 
 
 finished_label = gp.Label(app, "Kill List")
