@@ -41,11 +41,18 @@ app.run()
 '''
 
 # create application window
+app = gp.GooeyPieApp("Do it")
+app.width = 500
+
 
 # create functions
 
+
 # create widgets
+
 
 # place widgets on grid
 
+
 # run app
+app.run()
