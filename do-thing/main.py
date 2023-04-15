@@ -41,12 +41,11 @@ app.run()
 '''
 
 # create application window
-app = gp.GooeyPieApp("Do it")
-app.width = 500
-app.set_grid(7, 3)
+app = gp.GooeyPieApp("Do the things")
+app.width = 700
+app.set_grid(7, 7)
 
 # create functions
-#
 
 
 def add_task(event):
