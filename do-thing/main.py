@@ -10,8 +10,8 @@ complete.py
 '''
 import gooeypie as gp
 
-
-def say_hello(event):
+'''
+def give_result(event):
     result_lbl.text = "You got it, boss!"
 
 
@@ -26,14 +26,16 @@ app.set_grid(3, 3)
 
 # Define label and button
 
-add_btn = gp.Button(app, "Put it on the board", None)
+add_btn = gp.Button(app, "Put it on the board", give_result)
 prompt_lbl = gp.Label(app, 'What needs doing?')
 result_lbl = gp.Label(app, '')
 
 # display on app
 app.add(add_btn, 2, 2, align='left')
 app.add(prompt_lbl, 2, 1, align='right')
-app.add(result_lbl, 3, 2, align='center')
+app.add(result_lbl, 3, 2, align='left')
+
+'''
 
 
 # always last
