@@ -10,5 +10,11 @@ complete.py
 '''
 import gooeypie as gp
 
-
+# name the app on top of window
 app = gp.GooeyPieApp('Do the Thing')
+
+# width of window
+app.width = 250
+
+# always last
+app.run()
