@@ -19,14 +19,14 @@ app.width = 700
 # set up grid
 app.set_grid(3, 3)
 
-# attach hello button
+# Define label and button
 
 hello_btn = gp.Button(app, "Put it on the board", None)
-hello_lbl = gp.Label(app, 'What needs doing?')
+prompt_lbl = gp.Label(app, 'What needs doing?')
 
-# add them to the app
+# display on app
 app.add(hello_btn, 2, 2, align='left')
-app.add(hello_lbl, 2, 1, align='right')
+app.add(prompt_lbl, 2, 1, align='right')
 
 
 # always last
